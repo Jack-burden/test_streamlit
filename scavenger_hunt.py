@@ -62,4 +62,4 @@ for _, poi in pois.iterrows():
         icon=folium.Icon(color=color, icon='question-sign'),
     ).add_to(m)
 
-st.folium(m, width = 900, height = 550)
+st_folium(m, width = 900, height = 550)
