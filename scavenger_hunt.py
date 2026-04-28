@@ -45,7 +45,7 @@ m = folium.Map(location = [30.61, 114.28],
                title = 'cartodbpositron'
               )
 
-HeatMap(cases[['lat', 'lon']].values_tolist(), radius = 12, blur = 15).add_to(m)
+HeatMap(cases[['lat', 'lon']].values.tolist(), radius = 12, blur = 15).add_to(m)
 
 for _, poi in pois.iterrows():
     if poi['is_source'] and show_source:
